@@ -1,0 +1,36 @@
+<ion-app>
+  <ion-split-pane>
+    <ion-menu type="overlay">
+      <ion-content>
+        <div class="container">
+          <header>
+            <div class="profile-pic-container" [routerLink]="'/my'">
+              <ion-icon name="md-contact" class="profile-pic" style="zoom:7.3;"></ion-icon>
+              <div class="search-container"><i class="icon search"></i></div>
+            </div>
+          </header>
+          <ion-item>
+            <p class="description">Nattapat teeranuntachai</p>
+          </ion-item>
+        </div>
+        <ion-list lines="none" >
+          <ion-item>
+            <ion-label color="dark"></ion-label>
+          </ion-item>
+            <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>
+                {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+
+      </ion-content>
+
+    </ion-menu>
+    <ion-router-outlet main></ion-router-outlet>
+
+  </ion-split-pane>
+</ion-app>

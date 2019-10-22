@@ -1,0 +1,84 @@
+
+// Variables
+$white: #fff;
+$black: #202020;
+$grey: #808080;
+$background: #c3c8c9;
+$pink: #FF6C8B;
+$orange: #FFAC40;
+$reds: #f04141;
+$default-border: 1px
+$background solid;
+
+// Basics
+.container {
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 0em;
+  color: $black;
+}
+
+// Header
+header {
+  background-size: cover;
+  position: relative;
+  min-height: 110px;
+  margin-bottom: 60px;
+}
+.profile-pic-container {
+  bottom: -50px;
+  left: calc(50% - 50px);
+  position: absolute;
+}
+
+.profile-pic {
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.description{
+  min-height: 30px;
+  padding: 0.5em 2.5em;
+  text-align: center;
+}
+.search-container {
+  background-color: $reds;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: 2em;
+  right: 0;
+
+  i::after{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+  }
+}
+.icon.search::after {
+  content: '\f002';
+}
+.view-options{
+  border-bottom: $default-border;
+}
+
+.view-option{
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  border-left: $default-border;
+  margin: 0.8em 0;
+
+  i::after{
+    font-size: 0.9em;
+  }
+
+  &.active i::after{
+    color: $orange;
+  }
+}

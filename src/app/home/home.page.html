@@ -1,0 +1,111 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="danger"></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="./assets/icon/b7a5eb689a4a99bf961ccae72b0b984f.png" class="logo"></ion-img>
+      <ion-button color="danger" slot="end">
+        <ion-icon name="search"></ion-icon>
+      </ion-button >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item lines="none">
+    <p slot="start">SiFi movie</p>
+    <ion-icon name="arrow-forward" slot="end"></ion-icon>
+  </ion-item>
+
+    <ion-slides [options]="slidesOptions">
+    <ion-slide>
+      <ion-card [routerLink]="'/battleship'" class="battleship_card poster1_card" ></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card [routerLink]="'/alien'"class="alien_card poster1_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="the_martian_card poster1_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="interstellar_card poster1_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="Endgame_card poster1_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="jurassic_world_card poster1_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="spider_man_card poster1_card"></ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item lines="none">
+    <p slot="start">Action movie</p>
+    <ion-icon name="arrow-forward" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-slides [options]="slidesOptions">
+    <ion-slide>
+      <ion-card class="imssion_card poster2_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="rambo_card poster2_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="deadpool_card poster2_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="john_wick_card poster2_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="edge-of-tomorrow_card poster2_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="james_bond_card poster2_card"></ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-item lines="none">
+    <p slot="start">Adventure movies</p>
+    <ion-icon name="arrow-forward" slot="end"></ion-icon>
+  </ion-item>
+
+  <ion-slides [options]="slidesOptions">
+    <ion-slide>
+      <ion-card class="Ready-Player-One_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="dark-tower_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="rampage_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="valerian-city-thousand-planets_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="tomorrowland_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="passengers_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="Jumanji-Welcome-to-the-Jungle-2017-Poster-jumanji_card poster3_card"></ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="independence-day-2_card poster3_card"></ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon  name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button [routerLink]="'/dark-mode'"><ion-icon name="color-fill"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-google"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

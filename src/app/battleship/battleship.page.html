@@ -1,0 +1,28 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-img src="./assets/icon/b7a5eb689a4a99bf961ccae72b0b984f.png" class="logo"></ion-img>
+    <ion-button color="danger" slot="end">
+      <ion-icon name="search"></ion-icon>
+    </ion-button >
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-img src="/assets/images/battleship-movie-image-15.jpg" class="img-battleship" ></ion-img>
+  <ion-text color="dark">
+    <h1>Battleship is a 2012 American military science fiction action film that is loosely based on the board game of the same name. The film was directed by Peter Berg and stars Taylor Kitsch, Brooklyn Decker, Rihanna, Tadanobu Asano, Alexander Skarsgård and Liam Neeson. Filming took place in Hawaii and on USS Missouri. In the film, the crews of a small group of warships are forced to do battle against a naval fleet of extraterrestrial origin in order to thwart their destructive goals</h1>
+  </ion-text>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon  name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button [routerLink]="'/home'"><ion-icon name="ios-home"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-google"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

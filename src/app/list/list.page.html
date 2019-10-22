@@ -1,0 +1,32 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      List
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-icon [name]="item.icon" slot="start"></ion-icon>
+      {{item.title}}
+      <div class="item-note" slot="end">
+        {{item.note}}
+      </div>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon  name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button [routerLink]="'/home'"><ion-icon name="ios-home"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      <ion-fab-button><ion-icon name="logo-google"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
